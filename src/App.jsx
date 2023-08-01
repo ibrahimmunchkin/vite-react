@@ -1,16 +1,17 @@
-import Button from "./components/button";
-import Inpvalue from "./components/input";
-
+import Shopify from "./components/logo";
+import Product from "./components/product";
+  
 
 function App() {
 
+ 
+ 
   return (
-
     <div>
-    <h1 className="p1">Task Planner</h1>
-    <Inpvalue/>
-    <Button/>
+    <Shopify/>
+    <Product/>
     </div>
+
   )
 }
 
