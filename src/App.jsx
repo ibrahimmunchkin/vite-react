@@ -1,17 +1,20 @@
-import Shopify from "./components/logo";
+import { useState } from "react";
+import Cart from "./components/cart";
 import Product from "./components/product";
+import Shopify from "./components/logo";
 
 function App() {
- 
+  const [item,setItem] = useState(0);
+  const [newComponent,setNewComponent] = useState(false);
   return (
-    <div>
+    <>
     <Shopify/>
+    <Cart item={item} />
     <p className="p">Products</p>
     <div className="pcont">
-    <Product name="WATCH" price={25.99} imgUrl="./src/img/watch.jpg"/>
-    <Product name="SHOES" price={14.25} imgUrl="./src/img/shoes.png"/>
+    <Product item={item} setItem={setItem}/>
     </div>
-    </div>
+    </>
 
   )
 }
