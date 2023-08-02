@@ -1,32 +1,20 @@
-import { useState } from "react";
+import React, { useState } from "react";
+// import imgUrl from "/Users/Admiral Farim/vite/vite-react/src/img";
+import { useEffect } from "react";
 
-
-const Product = () =>{
-
-    const [count,setCount] = useState(0);
-    const addToCart = ()=>{
-     setCount(count + 1);
-      if(count<2){
-
+const Product = ({name,price,imgUrl}) =>{
+ const [item,setItem] = useState(0);
+   const addToCart = ()=>{
+ setItem(item + 1);
    }
-    }
 
     return(
         <>
-        <p className="cart">Cart:{count}</p>
-        <div>
-        <p className="p">Products</p>
-        </div>
-        <div className="pcont">
         <div className="item1 pt">
-            <p className="p1">WATCH</p>
-            <button onClick={addToCart} className="buy">BUY</button>
-            
-        </div>
-        <div className="item2 pt">
-        <p className="p2">SHOES</p>
-        <button  onClick={addToCart} className="buy">BUY</button>
-        </div>
+            <p className="p1">{name}</p>
+            <p className="price">${price}</p>
+            <img src={imgUrl} alt={name} className="pic"/>
+            <button onClick={addToCart} className="buy">BUY</button>  
         </div>
         </>
     )
