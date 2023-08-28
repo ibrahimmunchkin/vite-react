@@ -1,12 +1,12 @@
-
-
-const Logo = ()=>{
-
-return (
-<>
-<h1 className="logo">SHOPIFY</h1>
-
-</>
-)
+const Logo = () => {
+    return (
+        <>
+            <div className="header">
+                <p className="logo">iNDi</p>
+                <div className="user"></div>
+                <div className="cart">CART</div>
+            </div>
+        </>
+    )
 }
-export default Logo
+export default Logo;

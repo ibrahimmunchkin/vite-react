@@ -1,77 +1,118 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-*{
-    margin:10px;
-}
-
-.logo{
-    color:black;
-    font-size: 70px;
-    font-weight:700;
-    font-family: 'Courier New', Courier, monospace;
-}
-.cart{
-    color:white;
-    font-size: 20px;
-    position:relative;
-    top: -90px;
-    left: 350px;
-    background:green;
-    display: block;
-    width: 70px;
-    height: 30px;
-    text-align: center;
-    border-radius:5px;
-    cursor:pointer;
-}
-.cart:hover{
-    opacity:.8;
-}
-.p{
-    font-size:35px;
+.offer{
+    display:block;
+    width: 100%;
+    height: 1rem;
+    background:#03010a;
 }
 
-.pic{
-    width:100%;
-    height: 95px;
-    position: relative;
-    top:-140px;
-    left: -10px;
+.info{
+    text-align:center;
+    color: white;
+    font-family: monospace;
     
 }
-
-.item{
-    width: 200px;
+.header{
+    display: flex;
+    width: 100%;
+    height:3rem;
+    /* background: red; */
+    align-items: baseline;
 }
-.pt{
-    display: block;
-    width: 130px;
-    height: 220px;
-    border-radius:10px;
-    box-shadow:2px 2px 5px;
-   
+.logo{
+    font-family: cursive;
+    position: relative;
+    top:-2rem;
 }
-.p1{
-    margin-bottom: 120px;
-    font-family: serif;
+.cart{
+    position: relative;
+    top:-2rem;
+    color: #838360;
 }
-.p2{
-    font-family: serif;
-    margin-bottom: 120px;
+.searcher{
+    display:flex;
+    margin-top: 1.5rem;
+    margin-left:5rem;
+    /* background:red; */
 }
-.buy{
-    background:none;
-    border-radius:10px;
-    position:relative;
-    top: -120px;
-    left:35px;
-    border:2px solid;
-    width:60px;
-    cursor:pointer;
+.search{
+    width: 13rem;
+    height:2rem;
+    border: none;
+    text-align: center;
+    border-radius:12px;
+    box-shadow:2px 2px 3px grey;
 }
-.buy:hover{
+.searchBtn{
+    border:2px solid black;
+    border-radius: 10px;
+    background:white;
+    width: 60px;
+    margin-left:2rem;
+}
+.searchBtn:hover{
     color: white;
     background:black;
+}
+.imgArr{
+    margin-top:1rem;
+    display: block;
+    background:#838360;
+    width: 100%;
+    height: 13rem;
+}
+.info1{
+    color:white;
+    margin-left: 0.8rem;
+
+}
+
+@media  (min-width:475px) {
+    
+.offer{
+    font-size:0.9rem;
+}
+.info{
+align-items:center;
+}
+.logo{
+    font-size:2rem;
+
+}
+.cart{
+    margin-left:21rem;
+}
+.info{
+    font-family:monospace;
+}
+.info1{
+    font-size: 1.8rem;
+    position: relative;
+    top: 2.5rem;
+}
+.info2{
+    color:white;
+    margin: 0.8rem;
+    width: 50%;
+    letter-spacing:0.1rem;
+    position: relative;
+    top: 2rem;
+}
+.shop{
+    border:2px solid black;
+    border-radius: 10px;
+    background:white;
+    width: 40%;
+    height: 2rem;
+    margin-left:8rem;
+    position:absolute;
+    top:20.5rem;
+}
+.shop:hover{
+    color: white;
+    background:black;
+}
 }
